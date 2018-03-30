@@ -20,6 +20,7 @@
         		<img id="25" src="25.png" />
 			<a-asset-item id="Test-obj" src="Test.obj"></a-asset-item>
     			<a-asset-item id="Test-mtl" src="Test.mtl"></a-asset-item>
+			<a-asset-item id="Test" src="Test.gltf">
     		    </a-assets>
 		<a-marker preset='hiro'>
 
@@ -29,9 +30,10 @@
 					<a-animation attribute="scale" from ="1 1 1" to="2 2 2" dur="1000" easing='ease-in-out-circ' repeat="indefinite" direction="alternate-reverse"></a-animation>
 				</a-image>
 				
+			<!--
 			<a-obj-model src="#Test-obj" mtl="#Test-mtl" scale="0.5 .5 .5"></a-obj-model>
-			
-			
+			-->
+			 <a-gltf-model src="#Test"></a-gltf-model>
 			
 		</a-marker>
 
