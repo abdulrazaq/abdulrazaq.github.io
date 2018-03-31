@@ -20,6 +20,7 @@
         		<img id="25" src="25.png" />
 			<img id="50" src="50.png" />
 			<img id="75" src="75.png" />
+			<img id="100" src="100.png" />
 			<a-asset-item id="Test-obj" src="Test.obj"></a-asset-item>
     			<a-asset-item id="Test-mtl" src="Test.mtl"></a-asset-item>
 			<a-asset-item id="Test" src="Test.gltf">
@@ -47,7 +48,7 @@
 			
 		</a-marker>	
 			    
-		<a-marker type='barcode' value='10'>
+		<a-marker type='barcode' value='2'>
 			
 				<a-image src="#75" position='0 0.5 0'>
 				
@@ -55,7 +56,17 @@
 				</a-image>
 		
 			
-		</a-marker>			    
+		</a-marker>
+			    
+		<a-marker type='barcode' value='3'>
+			
+				<a-image src="#100" position='0 0.5 0'>
+				
+					<a-animation attribute="scale" from ="1 1 1" to="2 2 2" dur="1000" easing='ease-in-out-circ' repeat="indefinite" direction="alternate-reverse"></a-animation>
+				</a-image>
+		
+			
+		</a-marker>				    
 		<!-- handle matrix marker -->
 		<a-marker type='barcode' value='5'>
 			<a-box position='0 0.5 0' material='opacity: 0.5; side: double;color:pink;'>
